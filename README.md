@@ -1,10 +1,12 @@
 1. Support functions: Typeahead, sum, display result accroding query
 
-2. Using mylibrary.js as an external library that provides an object with functions (extract content in the input box and convert it to arrary.)
+2. Create a external library named mylibrary.js, which returns an object with functions (extract content in the input box and convert it to arrary.)
 
-3. Using AngularJS directive create You can add any functions, such as count, max etc in the Angular service 
+3. Create an AngularJS directive for Typeahead. 
 
-2. Typehead: when user inputs any character that is in the functionality database, Typehead will provide a sample formula. For example, when you input "s", the sample formula of "sum" will be displayed. End-user click on the reminding formula, the formula will show in the input box. Then the user can edit formula based on their needs. The reminding formula will keep there as a QUERY remider in case of end-user forget the formula he choose.
+4. Create an AngularJS service that valids the input arrary and return sum based on the query. You can add any functions, such as count, max accroding your requirements.
+
+5. Typehead: when user inputs any character that is in the functionality database, Typehead will provide a sample formula. For example, when you input "s", the sample formula of "sum" will be displayed. End-user click on the reminding formula, the formula will show in the input box. Then the user can edit formula based on their needs. 
 
 3. Be careful, no space is allowed in the queries.
 
