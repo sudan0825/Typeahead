@@ -2,7 +2,7 @@
 
 2. Create a external library named mylibrary.js, which returns an object with functions (extract content in the input box and convert it to arrary.)
 
-3. Create an AngularJS directive for Typeahead. 
+3. Create Typeahead with AngularJS directive. 
 
 4. Create an AngularJS service that valids the input arrary and return sum based on the query. You can add any functions, such as count, max accroding your requirements.
 
