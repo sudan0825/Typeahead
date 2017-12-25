@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Typeahead</title>
+        <link rel="stylesheet" href="assets/formula.css">
+
+        <!--
+<script
+src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+-->
+    </head>
+    <body>
+        <h1> Calculation Form</h1>
+        <div id="container"  ng-app="strideApp" ng-controller="myCtrl">
+
+            <typeahead formulas="formulas" prompt="Please input yout formula" select="selectedItem(item)" model="val"></typeahead>
+            <button ng-click="calculate()">Submit</button>
+            <div id="result" ng-style="textColor">
+                {{calculation}}
+
+            </div>
+            <table id="custom">
+                <tr>
+                    <th>Revenue</th>
+                    <th>Quantity</th>
+                    <th>Create-Date</th>
+                </tr>
+                <tr ng-repeat="x in data|filter:myfilter">
+                    <td>{{x.revenue}}</td>
+                    <td>{{x.quantity}}</td>
+                    <td>{{x.create_at}}</td>
+                </tr></table>
+        </div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+           <script
+                src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous"></script>
+
+        <script src="js/mylibrary.js"></script>
+        <script src="js/formula.js"></script>
+
+    </body>
+</html>
+
+

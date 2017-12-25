@@ -1,0 +1,109 @@
+[  
+   {  "id" :1,
+      "revenue":1000,
+      "quantity":500,
+      "create_at":"2016-03-08"
+   },
+   {  
+        "id" :2,
+      "revenue":1030,
+      "quantity":50,
+      "create_at":"2015-06-01"
+   },
+   {  
+        "id" :3,
+      "revenue":8100,
+      "quantity":160,
+      "create_at":"2017-06-01"
+   },
+   {  
+        "id" :4,
+      "revenue":800,
+      "quantity":260,
+      "create_at":"2016-04-01"
+   },
+   {  
+        "id" :5,
+      "revenue":1900,
+      "quantity":360,
+      "create_at":"2017-06-01"
+   },
+   {  
+        "id" :6,
+      "revenue":1030,
+      "quantity":560,
+      "create_at":"2016-06-01"
+   },
+   {  
+      "revenue":1070,
+      "quantity":640,
+      "create_at":"2015-12-01"
+   },
+   {  
+        "id" :7,
+      "revenue":1700,
+      "quantity":760,
+      "create_at":"2015-06-01"
+   },
+   {  
+        "id" :8,
+      "revenue":1500,
+      "quantity":960,
+      "create_at":"2015-06-01"
+   },
+   {  
+        "id" :9,
+      "revenue":1500,
+      "quantity":500,
+      "create_at":"2015-06-01"
+   },
+   {  
+        "id" :10,
+      "revenue":120,
+      "quantity":50,
+      "create_at":"2015-06-01"
+   },
+   {  
+        "id" :11,
+      "revenue":9990,
+      "quantity":60,
+      "create_at":"2015-06-01"
+   },
+   {  
+        "id" :12,
+      "revenue":980,
+      "quantity":260,
+      "create_at":"2016-06-01"
+   },
+   {  
+        "id" :13,
+      "revenue":9600,
+      "quantity":30,
+      "create_at":"2017-06-01"
+   },
+   {  
+        "id" :14,
+      "revenue":1330,
+      "quantity":580,
+      "create_at":"2015-12-01"
+   },
+   {  
+        "id" :15,
+      "revenue":1450,
+      "quantity":640,
+      "create_at":"2015-06-01"
+   },
+   {  
+        "id" :16,
+      "revenue":1708,
+      "quantity":760,
+      "create_at":"2015-03-01"
+   },
+   {  
+        "id" :17,
+      "revenue":7090,
+      "quantity":960,
+      "create_at":"2016-03-01"
+   }
+]
+
