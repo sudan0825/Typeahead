@@ -1,9 +1,12 @@
 var app = angular.module('strideApp',[]);
+//Function factory
 app.factory("Formulas", function(){
     var formulas=["sum(@predictive, @revenue)","min(@predictive, @revenue)","count(@quantity>1000)","avg(@predictive, @revenue)" ,"max(@predictive, @revenue)"];
 
     return formulas;
 });
+
+//Data Factory 
 app.factory('dataFactory', function($http){
     return {
         get:function(url){
@@ -15,7 +18,7 @@ app.factory('dataFactory', function($http){
         }
     }
 });
-
+//controller for computation 
 app.controller('myCtrl',function($scope,Formulas,dataFactory,validationService){
 
     //get the formula list based on the input function
@@ -88,10 +91,16 @@ app.controller('myCtrl',function($scope,Formulas,dataFactory,validationService){
 
 
 });
+
+//Service for validation input field and do calculation
 app.service('validationService', function(){
+    //service object 
     var obj={};
+    //suport fucntions: Use them to validate the input field is supported or not
     var functionlist=['avg', 'sum','count','max','min'];
     var field=['quantity','revenue','create_at'];
+    
+    //validate input field
     obj.valid=function (arr){
         var len =arr.length;
         if(len==4&&functionlist.includes(arr[0])&&field.includes(arr[1])){
@@ -103,7 +112,7 @@ app.service('validationService', function(){
         }
 
     }
-
+   //SUM function
     obj.sum = function(data, theArray){
         var sum = 0;
 
@@ -123,6 +132,8 @@ app.service('validationService', function(){
 
     return obj;
 });
+
+//Create a typeahead dirctive
 app.directive('typeahead',function($timeout){
 
     return {
@@ -137,8 +148,8 @@ app.directive('typeahead',function($timeout){
 
         },
         link:function(scope,elem,attr){
-            scope.getSelection=function(selectedItem){
-                scope.model=selectedItem;
+            scope.getSelection=function(theItem){
+                scope.model=theItem;
 
                 scope.current=0;
                 scope.selected=true;

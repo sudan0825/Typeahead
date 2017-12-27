@@ -5,6 +5,3 @@
 <div class="item" ng-repeat="x in formulas|filter:model track by $index" ng-click="getSelection(x)" ng-class="{active:isCurrent($index)}" ng-mouseenter="setCurrent($index)"><p>{{x}}</p></div>
 
 </div>
-<!--
-<div id="reminder"  ng-if="val"><p ng-click="display($event)"  ng-repeat="formula in formulas | filter:val | limitTo:8">{{formula}}</p></div>
-<button ng-click="getContext()">Submit</button>-->
